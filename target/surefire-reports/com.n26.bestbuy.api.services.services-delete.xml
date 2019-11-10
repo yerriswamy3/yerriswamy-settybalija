@@ -1,0 +1,19 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/services/services-delete.feature" skipped="0" tests="2" time="1.439101">
+  <testcase classname="com.n26.bestbuy.api.services.services-delete" name="Get the services" time="1.092082">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'services' ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.services.services-delete" name="Get the services" time="0.347019">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'services' ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'services' ..................................................... passed
+When method get ........................................................... passed
+Given param $limit = 15 ................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

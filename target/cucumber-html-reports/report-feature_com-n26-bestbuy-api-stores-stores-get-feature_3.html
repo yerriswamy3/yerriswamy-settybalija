@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: com/n26/bestbuy/api/stores/stores-get.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>demo</td>
+            <td>08 Nov 2019, 22:11</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/n26/bestbuy/api/stores/stores-get.feature</td>
+                    <td      class="passed"    >16</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">16</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="3963498100">3s 963ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_regression.html">@regression</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/n26/bestbuy/api/stores/stores-get.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Verify Health Check Endpoint</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">011ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>22:11:52.737 karate.env system property was: null</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path 'stores'</span>
+  
+  <span class="lead-duration duration">011ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 981ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get the stores in MN state</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param state = 'MN'</span>
+  
+  <span class="lead-duration duration">015ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1s 965ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>22:11:54.665 request:
+1 &gt; GET http://localhost:3030/stores?state=MN
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3030
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:11:54.952 response time in milliseconds: 277.47
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 08 Nov 2019 16:41:54 GMT
+1 &lt; ETag: W/&quot;7226-6e2fjUN7t+OTac0BPqciHZXOz2M&quot;
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; X-Powered-By: Express
+{&quot;total&quot;:46,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;Minnetonka&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;13513 Ridgedale Dr&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Hopkins&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55305&quot;,&quot;lat&quot;:44.969658,&quot;lng&quot;:-93.449539,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.708Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.708Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:14}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:15}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Magnolia Design Center &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:17}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:18}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pacific Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:19}}]},{&quot;id&quot;:6,&quot;name&quot;:&quot;Inver Grove Heights&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1350 50th Street E&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Inver Grove Heights&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55077&quot;,&quot;lat&quot;:44.879314,&quot;lng&quot;:-93.077156,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.831Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.831Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:7}},{&quot;id&quot;:9,&quot;name&quot;:&quot;Samsung Experience Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:9}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:10}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:12}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:18}}]},{&quot;id&quot;:7,&quot;name&quot;:&quot;Roseville&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1643 County Road B2&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Roseville&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55113&quot;,&quot;lat&quot;:45.01651,&quot;lng&quot;:-93.168518,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.853Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.853Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:5}},{&quot;id&quot;:6,&quot;name&quot;:&quot;Camera Experience Shop &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:6}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:12}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:15}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:18}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pacific Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:19}}]},{&quot;id&quot;:8,&quot;name&quot;:&quot;Burnsville&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;14141 Aldrich Ave S&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Burnsville&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55337&quot;,&quot;lat&quot;:44.747404,&quot;lng&quot;:-93.288039,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:06.108Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:06.108Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:7}},{&quot;id&quot;:9,&quot;name&quot;:&quot;Samsung Experience Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:9}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:18}}]},{&quot;id&quot;:10,&quot;name&quot;:&quot;Maplewood&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1795 County Rd D E&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Maplewood&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55109&quot;,&quot;lat&quot;:45.036556,&quot;lng&quot;:-93.025986,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.414Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:14}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:18}}]},{&quot;id&quot;:11,&quot;name&quot;:&quot;Northtown&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;300 Northtown Dr Ne&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Blaine&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55434&quot;,&quot;lat&quot;:45.126179,&quot;lng&quot;:-93.261429,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.542Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.542Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:3}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:7}},{&quot;id&quot;:9,&quot;name&quot;:&quot;Samsung Experience Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:9}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:10}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.154Z&quot;,&quot;storeId&quot;:11,&quot;serviceId&quot;:12}}]},{&quot;id&quot;:12,&quot;name&quot;:&quot;St Cloud&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;4130 W Division St&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Saint Cloud&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;56301&quot;,&quot;lat&quot;:45.55275,&quot;lng&quot;:-94.209656,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 9-9; Sat: 9-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.575Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.575Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:12}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:15}}]},{&quot;id&quot;:14,&quot;name&quot;:&quot;Rochester&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;4050 Hwy 52 N&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Rochester&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55901&quot;,&quot;lat&quot;:44.064365,&quot;lng&quot;:-92.496895,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.756Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.756Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:14}}]},{&quot;id&quot;:15,&quot;name&quot;:&quot;Oakdale&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;8301 3rd St N&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Oakdale&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55128&quot;,&quot;lat&quot;:44.950054,&quot;lng&quot;:-92.936394,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.813Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.813Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:14}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Magnolia Design Center &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:17}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:18}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pacific Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:19}}]},{&quot;id&quot;:43,&quot;name&quot;:&quot;Duluth&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;5105 Burning Tree Rd&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Duluth&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55811&quot;,&quot;lat&quot;:46.808983,&quot;lng&quot;:-92.170853,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 9-9; Sat: 9-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.659Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.659Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:12}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.133Z&quot;,&quot;storeId&quot;:43,&quot;serviceId&quot;:15}}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>22:11:54.873 karate.env system property was: null</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path 'stores'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">642ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get the stores that sell apple products</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param service.name = 'Apple Shop'</span>
+  
+  <span class="lead-duration duration">005ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">637ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>22:11:54.884 request:
+1 &gt; GET http://localhost:3030/stores?service.name=Apple+Shop
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3030
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:11:55.513 response time in milliseconds: 625.66
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 08 Nov 2019 16:41:55 GMT
+1 &lt; ETag: W/&quot;77c8-9r97C3dI/zo/esLtnc/07O6OMKM&quot;
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; X-Powered-By: Express
+{&quot;total&quot;:756,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:4,&quot;name&quot;:&quot;Minnetonka&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;13513 Ridgedale Dr&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Hopkins&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55305&quot;,&quot;lat&quot;:44.969658,&quot;lng&quot;:-93.449539,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.708Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.708Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:14}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:15}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Magnolia Design Center &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:17}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:18}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pacific Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.213Z&quot;,&quot;storeId&quot;:4,&quot;serviceId&quot;:19}}]},{&quot;id&quot;:6,&quot;name&quot;:&quot;Inver Grove Heights&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1350 50th Street E&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Inver Grove Heights&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55077&quot;,&quot;lat&quot;:44.879314,&quot;lng&quot;:-93.077156,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.831Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.831Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:7}},{&quot;id&quot;:9,&quot;name&quot;:&quot;Samsung Experience Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:9}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:10}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:12}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.414Z&quot;,&quot;storeId&quot;:6,&quot;serviceId&quot;:18}}]},{&quot;id&quot;:7,&quot;name&quot;:&quot;Roseville&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1643 County Road B2&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Roseville&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55113&quot;,&quot;lat&quot;:45.01651,&quot;lng&quot;:-93.168518,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.853Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.853Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:5}},{&quot;id&quot;:6,&quot;name&quot;:&quot;Camera Experience Shop &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:6}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:12}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:15}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:18}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pacific Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.417Z&quot;,&quot;storeId&quot;:7,&quot;serviceId&quot;:19}}]},{&quot;id&quot;:8,&quot;name&quot;:&quot;Burnsville&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;14141 Aldrich Ave S&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Burnsville&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55337&quot;,&quot;lat&quot;:44.747404,&quot;lng&quot;:-93.288039,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:06.108Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:06.108Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:7}},{&quot;id&quot;:9,&quot;name&quot;:&quot;Samsung Experience Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:9}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.595Z&quot;,&quot;storeId&quot;:8,&quot;serviceId&quot;:18}}]},{&quot;id&quot;:10,&quot;name&quot;:&quot;Maplewood&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1795 County Rd D E&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Maplewood&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55109&quot;,&quot;lat&quot;:45.036556,&quot;lng&quot;:-93.025986,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.414Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:14}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:10,&quot;serviceId&quot;:18}}]},{&quot;id&quot;:12,&quot;name&quot;:&quot;St Cloud&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;4130 W Division St&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Saint Cloud&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;56301&quot;,&quot;lat&quot;:45.55275,&quot;lng&quot;:-94.209656,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 9-9; Sat: 9-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.575Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.575Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:12}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.169Z&quot;,&quot;storeId&quot;:12,&quot;serviceId&quot;:15}}]},{&quot;id&quot;:13,&quot;name&quot;:&quot;Fargo&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1615 38th St S&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Fargo&quot;,&quot;state&quot;:&quot;ND&quot;,&quot;zip&quot;:&quot;58103&quot;,&quot;lat&quot;:46.857113,&quot;lng&quot;:-96.842743,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 9-9; Sat: 9-9; Sun: 12-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.603Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.603Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:14}},{&quot;id&quot;:15,&quot;name&quot;:&quot;Best Buy Marine Powered by Geek Squad&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.218Z&quot;,&quot;storeId&quot;:13,&quot;serviceId&quot;:15}}]},{&quot;id&quot;:14,&quot;name&quot;:&quot;Rochester&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;4050 Hwy 52 N&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Rochester&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55901&quot;,&quot;lat&quot;:44.064365,&quot;lng&quot;:-92.496895,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.756Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.756Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.328Z&quot;,&quot;storeId&quot;:14,&quot;serviceId&quot;:14}}]},{&quot;id&quot;:15,&quot;name&quot;:&quot;Oakdale&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;8301 3rd St N&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Oakdale&quot;,&quot;state&quot;:&quot;MN&quot;,&quot;zip&quot;:&quot;55128&quot;,&quot;lat&quot;:44.950054,&quot;lng&quot;:-92.936394,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.813Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.813Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:4}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:14}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Magnolia Design Center &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:17}},{&quot;id&quot;:18,&quot;name&quot;:&quot;Geek Squad Solution Central&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:18}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pacific Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.361Z&quot;,&quot;storeId&quot;:15,&quot;serviceId&quot;:19}}]},{&quot;id&quot;:16,&quot;name&quot;:&quot;West Des Moines&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;4100 University Ave&quot;,&quot;address2&quot;:&quot;Ste 240&quot;,&quot;city&quot;:&quot;West Des Moines&quot;,&quot;state&quot;:&quot;IA&quot;,&quot;zip&quot;:&quot;50265&quot;,&quot;lat&quot;:41.599323,&quot;lng&quot;:-93.760139,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 9-9; Sat: 9-9; Sun: 10-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.845Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.845Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:5}},{&quot;id&quot;:6,&quot;name&quot;:&quot;Camera Experience Shop &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:6}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:12}},{&quot;id&quot;:19,&quot;name&quot;:&quot;Pacific Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.418Z&quot;,&quot;storeId&quot;:16,&quot;serviceId&quot;:19}}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">013ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>22:11:54.973 karate.env system property was: null</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">path 'stores'</span>
+  
+  <span class="lead-duration duration">012ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">1s 315ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get the stores around 90210 pin</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param service.name = 'Windows Store'</span>
+  
+  <span class="lead-duration duration">010ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param near = 90210</span>
+  
+  <span class="lead-duration duration">003ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">1s 301ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>22:11:55.014 request:
+1 &gt; GET http://localhost:3030/stores?service.name=Windows+Store&amp;near=90210
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3030
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:11:56.298 response time in milliseconds: 1281.36
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 08 Nov 2019 16:41:56 GMT
+1 &lt; ETag: W/&quot;6676-7SEKtPhHIqh3lHPP4MYS80GAEiQ&quot;
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; X-Powered-By: Express
+{&quot;total&quot;:8,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:109,&quot;name&quot;:&quot;West LA&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;11301 W Pico Blvd&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Los Angeles&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;90064&quot;,&quot;lat&quot;:34.035656,&quot;lng&quot;:-118.4389,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.414Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.414Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:5}},{&quot;id&quot;:6,&quot;name&quot;:&quot;Camera Experience Shop &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:6}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:14}},{&quot;id&quot;:16,&quot;name&quot;:&quot;Pacific Sales Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:16}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Magnolia Design Center &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.033Z&quot;,&quot;storeId&quot;:109,&quot;serviceId&quot;:17}}]},{&quot;id&quot;:137,&quot;name&quot;:&quot;Burbank&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1501 N Victory Pl&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Burbank&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;91504&quot;,&quot;lat&quot;:34.189072,&quot;lng&quot;:-118.32756,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.576Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.576Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:4}},{&quot;id&quot;:6,&quot;name&quot;:&quot;Camera Experience Shop &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:6}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:14}},{&quot;id&quot;:16,&quot;name&quot;:&quot;Pacific Sales Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:16}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Magnolia Design Center &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.170Z&quot;,&quot;storeId&quot;:137,&quot;serviceId&quot;:17}}]},{&quot;id&quot;:179,&quot;name&quot;:&quot;Culver City&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;10799 Washington Blvd&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Culver City&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;90232&quot;,&quot;lat&quot;:34.016224,&quot;lng&quot;:-118.40641,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.911Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.911Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.465Z&quot;,&quot;storeId&quot;:179,&quot;serviceId&quot;:14}}]},{&quot;id&quot;:183,&quot;name&quot;:&quot;Atwater Village&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;2909 Los Feliz Blvd&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Los Angeles&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;90039&quot;,&quot;lat&quot;:34.126701,&quot;lng&quot;:-118.26443,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.912Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.912Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:14}},{&quot;id&quot;:16,&quot;name&quot;:&quot;Pacific Sales Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.466Z&quot;,&quot;storeId&quot;:183,&quot;serviceId&quot;:16}}]},{&quot;id&quot;:393,&quot;name&quot;:&quot;West Hollywood&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;1015 N La Brea Ave&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;W Hollywood&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;90038&quot;,&quot;lat&quot;:34.089316,&quot;lng&quot;:-118.344561,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.596Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.596Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:14}},{&quot;id&quot;:16,&quot;name&quot;:&quot;Pacific Sales Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:16}},{&quot;id&quot;:17,&quot;name&quot;:&quot;Magnolia Design Center &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.066Z&quot;,&quot;storeId&quot;:393,&quot;serviceId&quot;:17}}]},{&quot;id&quot;:764,&quot;name&quot;:&quot;Sherman Oaks&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;4500 Van Nuys Blvd&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Sherman Oaks&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;91403&quot;,&quot;lat&quot;:34.153481,&quot;lng&quot;:-118.44733,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.848Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.848Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:7}},{&quot;id&quot;:8,&quot;name&quot;:&quot;Magnolia Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:8}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:11}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:14}},{&quot;id&quot;:16,&quot;name&quot;:&quot;Pacific Sales Kitchen &amp; Home&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:09.415Z&quot;,&quot;storeId&quot;:764,&quot;serviceId&quot;:16}}]},{&quot;id&quot;:1180,&quot;name&quot;:&quot;Northridge&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;19350 #B Nordhoff Way&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Northridge&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;91324&quot;,&quot;lat&quot;:34.23403,&quot;lng&quot;:-118.55508,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.517Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.517Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:12}},{&quot;id&quot;:13,&quot;name&quot;:&quot;LG Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:13}},{&quot;id&quot;:14,&quot;name&quot;:&quot;Sony Experience &quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.113Z&quot;,&quot;storeId&quot;:1180,&quot;serviceId&quot;:14}}]},{&quot;id&quot;:1510,&quot;name&quot;:&quot;Culver City Westfield Mall&quot;,&quot;type&quot;:&quot;BigBox&quot;,&quot;address&quot;:&quot;6000 Sepulveda Blvd.&quot;,&quot;address2&quot;:&quot;&quot;,&quot;city&quot;:&quot;Culver City&quot;,&quot;state&quot;:&quot;CA&quot;,&quot;zip&quot;:&quot;90230&quot;,&quot;lat&quot;:33.985787,&quot;lng&quot;:-118.394938,&quot;hours&quot;:&quot;Mon: 10-9; Tue: 10-9; Wed: 10-9; Thurs: 10-9; Fri: 10-9; Sat: 10-9; Sun: 11-8&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.783Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.783Z&quot;,&quot;services&quot;:[{&quot;id&quot;:1,&quot;name&quot;:&quot;Geek Squad Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:1}},{&quot;id&quot;:2,&quot;name&quot;:&quot;Best Buy Mobile&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:2}},{&quot;id&quot;:3,&quot;name&quot;:&quot;Best Buy For Business&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:3}},{&quot;id&quot;:4,&quot;name&quot;:&quot;Apple Shop&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:4}},{&quot;id&quot;:5,&quot;name&quot;:&quot;Hablamos Espa&ntilde;ol&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:5}},{&quot;id&quot;:7,&quot;name&quot;:&quot;Electronics Recycling&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:7}},{&quot;id&quot;:10,&quot;name&quot;:&quot;Windows Store&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:10}},{&quot;id&quot;:11,&quot;name&quot;:&quot;Samsung Experience&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:11}},{&quot;id&quot;:12,&quot;name&quot;:&quot;Car &amp; GPS Installation Services&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:56:35.881Z&quot;,&quot;storeservices&quot;:{&quot;createdAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:08.340Z&quot;,&quot;storeId&quot;:1510,&quot;serviceId&quot;:12}}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

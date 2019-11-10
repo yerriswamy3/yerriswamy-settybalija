@@ -1,0 +1,47 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/products/products-delete.feature" skipped="0" tests="3" time="11.316428">
+  <testcase classname="com.n26.bestbuy.api.products.products-delete" name="Get the products with only name and description" time="4.639395">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+And param $select[] = 'name' .............................................. passed
+And param $select[] = 'description' ....................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.products.products-delete" name="Get the products with only name and description" time="2.304012">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+And param $select[] = 'name' .............................................. passed
+And param $select[] = 'description' ....................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+Given param category.name = 'TVs' ......................................... passed
+Given param price[$gt] = '500' ............................................ passed
+Given param price[$lt] = '800' ............................................ passed
+Given param shipping[$eq] = '0' ........................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.products.products-delete" name="Get the healthcheck" time="4.37302">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+And param $select[] = 'name' .............................................. passed
+And param $select[] = 'description' ....................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+Given param category.name = 'TVs' ......................................... passed
+Given param price[$gt] = '500' ............................................ passed
+Given param price[$lt] = '800' ............................................ passed
+Given param shipping[$eq] = '0' ........................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+Given param $sort[price] = '-1' ........................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

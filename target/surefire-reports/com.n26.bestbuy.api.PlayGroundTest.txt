@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.n26.bestbuy.api.PlayGroundTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.776 s <<< FAILURE! - in com.n26.bestbuy.api.PlayGroundTest
+testParallel(com.n26.bestbuy.api.PlayGroundTest)  Time elapsed: 39.404 s  <<< FAILURE!
+java.lang.AssertionError: 
+failed features:
+com.n26.bestbuy.api.products.products-patch: products-patch.feature:11 - 
+java.net.SocketTimeoutException: Read timed out
+
+	at com.n26.bestbuy.api.PlayGroundTest.testParallel(PlayGroundTest.java:26)
+

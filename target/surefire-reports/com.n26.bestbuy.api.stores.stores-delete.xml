@@ -1,0 +1,39 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/stores/stores-delete.feature" skipped="0" tests="3" time="2.001528">
+  <testcase classname="com.n26.bestbuy.api.stores.stores-delete" name="Get the stores in MN state" time="0.504355">
+    <system-out>* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param state = 'MN' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.stores.stores-delete" name="Get the stores that sell apple products" time="0.603473">
+    <system-out>* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param state = 'MN' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param service.name = 'Apple Shop' ................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.stores.stores-delete" name="Get the stores around 90210 pin" time="0.8937">
+    <system-out>* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param state = 'MN' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param service.name = 'Apple Shop' ................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param service.name = 'Windows Store' ................................ passed
+Given param near = 90210 .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

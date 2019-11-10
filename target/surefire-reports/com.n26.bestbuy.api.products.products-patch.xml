@@ -1,0 +1,65 @@
+<testsuite failures="1" name="com/n26/bestbuy/api/products/products-patch.feature" skipped="0" tests="3" time="11.130233">
+  <testcase classname="com.n26.bestbuy.api.products.products-patch" name="Get the products with only name and description" time="5.010761">
+    <failure message="products-patch.feature:11 - &#10;java.net.SocketTimeoutException: Read timed out">* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+And param $select[] = 'name' .............................................. passed
+And param $select[] = 'description' ....................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: products-patch.feature:11 - 
+java.net.SocketTimeoutException: Read timed out&#13;
+	at ✽.When method get (products-patch.feature:11)&#13;
+
+Then status 200 ........................................................... skipped</failure>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.products.products-patch" name="Get the products with only name and description" time="4.438353">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+And param $select[] = 'name' .............................................. passed
+And param $select[] = 'description' ....................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: products-patch.feature:11 - 
+java.net.SocketTimeoutException: Read timed out&#13;
+	at ✽.When method get (products-patch.feature:11)&#13;
+
+Then status 200 ........................................................... skipped
+* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+Given param category.name = 'TVs' ......................................... passed
+Given param price[$gt] = '500' ............................................ passed
+Given param price[$lt] = '800' ............................................ passed
+Given param shipping[$eq] = '0' ........................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.products.products-patch" name="Get the healthcheck" time="1.68112">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+And param $select[] = 'name' .............................................. passed
+And param $select[] = 'description' ....................................... passed
+When method get ........................................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: products-patch.feature:11 - 
+java.net.SocketTimeoutException: Read timed out&#13;
+	at ✽.When method get (products-patch.feature:11)&#13;
+
+Then status 200 ........................................................... skipped
+* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+Given param category.name = 'TVs' ......................................... passed
+Given param price[$gt] = '500' ............................................ passed
+Given param price[$lt] = '800' ............................................ passed
+Given param shipping[$eq] = '0' ........................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'products' ..................................................... passed
+Given param $sort[price] = '-1' ........................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

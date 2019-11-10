@@ -1,0 +1,19 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/services/services-patch.feature" skipped="0" tests="2" time="1.964953">
+  <testcase classname="com.n26.bestbuy.api.services.services-patch" name="Get the services" time="1.643201">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'services' ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.services.services-patch" name="Get the services" time="0.321752">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'services' ..................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'services' ..................................................... passed
+When method get ........................................................... passed
+Given param $limit = 15 ................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

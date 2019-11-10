@@ -1,0 +1,22 @@
+22:49:09.536 karate.env system property was: null 
+22:49:09.546 request:
+1 > GET http://localhost:3030/healthcheck
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:49:10.115 response time in milliseconds: 568.72
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 99
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 08 Nov 2019 17:19:10 GMT
+1 < ETag: W/"63-M/BAOa+3ohukZD3l0v6IxMpasi8"
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+{"uptime":34114.99,"readonly":false,"documents":{"products":51957,"stores":1563,"categories":4307}}
+
+
+

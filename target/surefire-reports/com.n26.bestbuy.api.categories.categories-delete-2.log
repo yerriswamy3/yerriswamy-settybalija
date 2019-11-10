@@ -1,0 +1,32 @@
+22:49:05.308 karate.env system property was: null 
+22:49:05.313 request:
+1 > GET http://localhost:3030/categories?%24select%5B%5D=name
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:49:06.420 response time in milliseconds: 1106.05
+1 < 500
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Length: 136
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 08 Nov 2019 17:19:06 GMT
+1 < ETag: W/"88-e8uslLG0bI45ttWPqYwsOCTVQHs"
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+{"name":"GeneralError","message":"Cannot read property 'map' of undefined","code":500,"className":"general-error","data":{},"errors":{}}
+
+22:49:06.421 [print] {
+  "name": "GeneralError",
+  "message": "Cannot read property 'map' of undefined",
+  "code": 500,
+  "className": "general-error",
+  "data": {
+  },
+  "errors": {
+  }
+}
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="48306" started-at="2019-11-08T17:11:52Z" finished-at="2019-11-08T17:12:40Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="48306" started-at="2019-11-08T17:11:52Z" finished-at="2019-11-08T17:12:40Z">
+      <class name="com.n26.bestbuy.api.utilities.HealthCheckTest">
+        <test-method status="PASS" signature="testParallel()[pri:0, instance:com.n26.bestbuy.api.utilities.HealthCheckTest@1324409e]" name="testParallel" duration-ms="2751" started-at="2019-11-08T22:42:37Z" finished-at="2019-11-08T22:42:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallel -->
+      </class> <!-- com.n26.bestbuy.api.utilities.HealthCheckTest -->
+      <class name="com.n26.bestbuy.api.products.ProductsTest">
+        <test-method status="PASS" signature="testParallel()[pri:0, instance:com.n26.bestbuy.api.products.ProductsTest@17550481]" name="testParallel" duration-ms="12589" started-at="2019-11-08T22:42:17Z" finished-at="2019-11-08T22:42:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallel -->
+      </class> <!-- com.n26.bestbuy.api.products.ProductsTest -->
+      <class name="com.n26.bestbuy.api.services.ServicesTest">
+        <test-method status="PASS" signature="testParallel()[pri:0, instance:com.n26.bestbuy.api.services.ServicesTest@735f7ae5]" name="testParallel" duration-ms="2912" started-at="2019-11-08T22:42:30Z" finished-at="2019-11-08T22:42:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallel -->
+      </class> <!-- com.n26.bestbuy.api.services.ServicesTest -->
+      <class name="com.n26.bestbuy.api.PlayGroundTest">
+        <test-method status="PASS" signature="testParallel()[pri:0, instance:com.n26.bestbuy.api.PlayGroundTest@783e6358]" name="testParallel" duration-ms="12070" started-at="2019-11-08T22:42:05Z" finished-at="2019-11-08T22:42:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallel -->
+      </class> <!-- com.n26.bestbuy.api.PlayGroundTest -->
+      <class name="com.n26.bestbuy.api.stores.StoresTest">
+        <test-method status="PASS" signature="testParallel()[pri:0, instance:com.n26.bestbuy.api.stores.StoresTest@180bc464]" name="testParallel" duration-ms="4137" started-at="2019-11-08T22:42:33Z" finished-at="2019-11-08T22:42:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallel -->
+      </class> <!-- com.n26.bestbuy.api.stores.StoresTest -->
+      <class name="com.n26.bestbuy.api.categories.CategoriesTest">
+        <test-method status="PASS" signature="testParallel()[pri:0, instance:com.n26.bestbuy.api.categories.CategoriesTest@64616ca2]" name="testParallel" duration-ms="13801" started-at="2019-11-08T22:41:52Z" finished-at="2019-11-08T22:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testParallel -->
+      </class> <!-- com.n26.bestbuy.api.categories.CategoriesTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

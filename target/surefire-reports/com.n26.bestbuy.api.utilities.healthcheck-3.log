@@ -1,0 +1,23 @@
+22:49:09.818 karate.env system property was: null 
+22:49:09.846 request:
+1 > POST http://localhost:3030/healthcheck
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 2
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+{}
+
+22:49:10.102 response time in milliseconds: 254.92
+1 < 404
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 93
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 08 Nov 2019 17:19:10 GMT
+1 < ETag: W/"5d-QoCLoYQbBZvX9r0oLMz0KatYCKI"
+1 < Vary: Accept-Encoding
+1 < X-Powered-By: Express
+{"name":"NotFound","message":"Page not found","code":404,"className":"not-found","errors":{}}
+

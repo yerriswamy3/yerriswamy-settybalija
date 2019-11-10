@@ -1,0 +1,33 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/utilities/healthcheck.feature" skipped="0" tests="3" time="1.138243">
+  <testcase classname="com.n26.bestbuy.api.utilities.healthcheck" name="Get the healthcheck" time="0.577319">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'healthcheck' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.utilities.healthcheck" name="Get the healthcheck" time="0.281446">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'healthcheck' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'healthcheck1' ................................................. passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.utilities.healthcheck" name="Get the healthcheck" time="0.279478">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'healthcheck' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'healthcheck1' ................................................. passed
+When method get ........................................................... passed
+Then status 404 ........................................................... passed
+* url baseURL ............................................................. passed
+Given path 'healthcheck' .................................................. passed
+When request {} ........................................................... passed
+When method post .......................................................... passed
+Then status 404 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,298 @@
+22:48:49.989 karate.env system property was: null 
+22:48:54.330 request:
+1 > GET http://localhost:3030/categories?name%5B%24like%5D=*Mobile*
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:48:54.937 response time in milliseconds: 493.10
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 08 Nov 2019 17:18:54 GMT
+1 < ETag: W/"1577-1ka8gZT/TT4ykD3mHTskILPg8Ls"
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"total":55,"limit":10,"skip":0,"data":[{"id":"pcmcat282400050018","name":"Geek Squad Protection Plans for Mobile Phones","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z","subCategories":[],"categoryPath":[{"id":"pcmcat138100050018","name":"Geek Squad","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"},{"id":"pcmcat282400050018","name":"Geek Squad Protection Plans for Mobile Phones","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat748300499229","name":"Promo E GS & AppleCare Pages","createdAt":"2016-11-17T17:57:04.899Z","updatedAt":"2016-11-17T17:57:04.899Z"}]},{"id":"pcmcat298000050005","name":"Mdot Mobile SAS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z","subCategories":[],"categoryPath":[{"id":"pcmcat144600050035","name":"More Categories","createdAt":"2016-11-17T17:57:04.899Z","updatedAt":"2016-11-17T17:57:04.899Z"},{"id":"pcmcat221300050003","name":"Mdot Promotions","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat298000050005","name":"Mdot Mobile SAS","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":"pcmcat298200050001","name":"Mdot Mobile Phone Trade-In","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z","subCategories":[],"categoryPath":[{"id":"pcmcat144600050035","name":"More Categories","createdAt":"2016-11-17T17:57:04.899Z","updatedAt":"2016-11-17T17:57:04.899Z"},{"id":"pcmcat221300050003","name":"Mdot Promotions","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat298200050001","name":"Mdot Mobile Phone Trade-In","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":"pcmcat307000050001","name":"Mobile Payment Devices","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z","subCategories":[],"categoryPath":[{"id":"abcat0805000","name":"Office Electronics","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat307000050001","name":"Mobile Payment Devices","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat312300050015","name":"Connected Home & Housewares","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":"pcmcat310700050040","name":"Plantronics Mobile Headsets","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z","subCategories":[],"categoryPath":[{"id":"pcmcat128500050004","name":"Name Brands","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"},{"id":"pcmcat309000050000","name":"Plantronics Headsets","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat310700050040","name":"Plantronics Mobile Headsets","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":"pcmcat313900050003","name":"Mobile Phone Accessories","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z","subCategories":[],"categoryPath":[{"id":"pcmcat128500050004","name":"Name Brands","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"},{"id":"pcmcat155800050048","name":"Monster","createdAt":"2016-11-17T17:57:04.899Z","updatedAt":"2016-11-17T17:57:04.899Z"},{"id":"pcmcat313900050003","name":"Mobile Phone Accessories","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"}]},{"id":"pcmcat339400050005","name":"T-Mobile Prepaid Minutes","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z","subCategories":[],"categoryPath":[{"id":"abcat0800000","name":"Cell Phones","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat208100050004","name":"T-Mobile","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat339400050005","name":"T-Mobile Prepaid Minutes","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":"pcmcat339400050006","name":"T-Mobile SIM Cards","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z","subCategories":[],"categoryPath":[{"id":"abcat0800000","name":"Cell Phones","createdAt":"2016-11-17T17:57:04.285Z","updatedAt":"2016-11-17T17:57:04.285Z"},{"id":"pcmcat208100050004","name":"T-Mobile","createdAt":"2016-11-17T17:57:05.399Z","updatedAt":"2016-11-17T17:57:05.399Z"},{"id":"pcmcat339400050006","name":"T-Mobile SIM Cards","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":"pcmcat383800050000","name":"Boost Mobile","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z","subCategories":[],"categoryPath":[{"id":"pcmcat128500050004","name":"Name Brands","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"},{"id":"pcmcat383800050000","name":"Boost Mobile","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]},{"id":"pcmcat383800050001","name":"Virgin Mobile","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z","subCategories":[],"categoryPath":[{"id":"pcmcat128500050004","name":"Name Brands","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"},{"id":"pcmcat383800050001","name":"Virgin Mobile","createdAt":"2016-11-17T17:57:04.643Z","updatedAt":"2016-11-17T17:57:04.643Z"}]}]}
+
+22:48:54.952 [print] {
+  "total": 55,
+  "limit": 10,
+  "skip": 0,
+  "data": [
+    {
+      "id": "pcmcat282400050018",
+      "name": "Geek Squad Protection Plans for Mobile Phones",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "pcmcat138100050018",
+          "name": "Geek Squad",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+          "id": "pcmcat282400050018",
+          "name": "Geek Squad Protection Plans for Mobile Phones",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+          "id": "pcmcat748300499229",
+          "name": "Promo E GS & AppleCare Pages",
+          "createdAt": "2016-11-17T17:57:04.899Z",
+          "updatedAt": "2016-11-17T17:57:04.899Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat298000050005",
+      "name": "Mdot Mobile SAS",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "pcmcat144600050035",
+          "name": "More Categories",
+          "createdAt": "2016-11-17T17:57:04.899Z",
+          "updatedAt": "2016-11-17T17:57:04.899Z"
+        },
+        {
+          "id": "pcmcat221300050003",
+          "name": "Mdot Promotions",
+          "createdAt": "2016-11-17T17:57:05.399Z",
+          "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+          "id": "pcmcat298000050005",
+          "name": "Mdot Mobile SAS",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat298200050001",
+      "name": "Mdot Mobile Phone Trade-In",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "pcmcat144600050035",
+          "name": "More Categories",
+          "createdAt": "2016-11-17T17:57:04.899Z",
+          "updatedAt": "2016-11-17T17:57:04.899Z"
+        },
+        {
+          "id": "pcmcat221300050003",
+          "name": "Mdot Promotions",
+          "createdAt": "2016-11-17T17:57:05.399Z",
+          "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+          "id": "pcmcat298200050001",
+          "name": "Mdot Mobile Phone Trade-In",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat307000050001",
+      "name": "Mobile Payment Devices",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "abcat0805000",
+          "name": "Office Electronics",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+          "id": "pcmcat307000050001",
+          "name": "Mobile Payment Devices",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+          "id": "pcmcat312300050015",
+          "name": "Connected Home & Housewares",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat310700050040",
+      "name": "Plantronics Mobile Headsets",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "pcmcat128500050004",
+          "name": "Name Brands",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+          "id": "pcmcat309000050000",
+          "name": "Plantronics Headsets",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+          "id": "pcmcat310700050040",
+          "name": "Plantronics Mobile Headsets",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat313900050003",
+      "name": "Mobile Phone Accessories",
+      "createdAt": "2016-11-17T17:57:04.285Z",
+      "updatedAt": "2016-11-17T17:57:04.285Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "pcmcat128500050004",
+          "name": "Name Brands",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+          "id": "pcmcat155800050048",
+          "name": "Monster",
+          "createdAt": "2016-11-17T17:57:04.899Z",
+          "updatedAt": "2016-11-17T17:57:04.899Z"
+        },
+        {
+          "id": "pcmcat313900050003",
+          "name": "Mobile Phone Accessories",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat339400050005",
+      "name": "T-Mobile Prepaid Minutes",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "abcat0800000",
+          "name": "Cell Phones",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+          "id": "pcmcat208100050004",
+          "name": "T-Mobile",
+          "createdAt": "2016-11-17T17:57:05.399Z",
+          "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+          "id": "pcmcat339400050005",
+          "name": "T-Mobile Prepaid Minutes",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat339400050006",
+      "name": "T-Mobile SIM Cards",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "abcat0800000",
+          "name": "Cell Phones",
+          "createdAt": "2016-11-17T17:57:04.285Z",
+          "updatedAt": "2016-11-17T17:57:04.285Z"
+        },
+        {
+          "id": "pcmcat208100050004",
+          "name": "T-Mobile",
+          "createdAt": "2016-11-17T17:57:05.399Z",
+          "updatedAt": "2016-11-17T17:57:05.399Z"
+        },
+        {
+          "id": "pcmcat339400050006",
+          "name": "T-Mobile SIM Cards",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat383800050000",
+      "name": "Boost Mobile",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "pcmcat128500050004",
+          "name": "Name Brands",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+          "id": "pcmcat383800050000",
+          "name": "Boost Mobile",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        }
+      ]
+    },
+    {
+      "id": "pcmcat383800050001",
+      "name": "Virgin Mobile",
+      "createdAt": "2016-11-17T17:57:04.643Z",
+      "updatedAt": "2016-11-17T17:57:04.643Z",
+      "subCategories": [
+      ],
+      "categoryPath": [
+        {
+          "id": "pcmcat128500050004",
+          "name": "Name Brands",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        },
+        {
+          "id": "pcmcat383800050001",
+          "name": "Virgin Mobile",
+          "createdAt": "2016-11-17T17:57:04.643Z",
+          "updatedAt": "2016-11-17T17:57:04.643Z"
+        }
+      ]
+    }
+  ]
+}
+
+

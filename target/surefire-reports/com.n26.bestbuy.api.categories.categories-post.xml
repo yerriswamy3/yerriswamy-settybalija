@@ -1,0 +1,14 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/categories/categories-post.feature" skipped="0" tests="1" time="2.274955">
+  <testcase classname="com.n26.bestbuy.api.categories.categories-post" name="Create a Categories" time="2.274955">
+    <system-out>* url baseURL ............................................................. passed
+* def now = function(){ return java.lang.System.currentTimeMillis() } ..... passed
+* def payload1 = .......................................................... passed
+Given path 'categories' ................................................... passed
+* def id = "catId - " + now ............................................... passed
+* def name = "catName -" + now ............................................ passed
+And request payload1 ...................................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

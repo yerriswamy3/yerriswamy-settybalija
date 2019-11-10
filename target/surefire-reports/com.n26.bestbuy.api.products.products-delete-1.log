@@ -1,0 +1,22 @@
+22:48:49.996 karate.env system property was: null 
+22:48:54.330 request:
+1 > GET http://localhost:3030/products?%24select%5B%5D=description
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Host: localhost:3030
+1 > User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:48:54.983 response time in milliseconds: 625.06
+1 < 200
+1 < Access-Control-Allow-Origin: *
+1 < Allow: GET,POST,PUT,PATCH,DELETE
+1 < Connection: keep-alive
+1 < Content-Type: application/json; charset=utf-8
+1 < Date: Fri, 08 Nov 2019 17:18:54 GMT
+1 < ETag: W/"498-GpO+gKQiRbESBYyTAWYZBnny7JI"
+1 < Transfer-Encoding: chunked
+1 < Vary: Accept, Accept-Encoding
+1 < X-Powered-By: Express
+{"total":51957,"limit":10,"skip":0,"data":[{"description":"Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack"},{"description":"Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more"},{"description":"Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack"},{"description":"4-pack AA alkaline batteries; battery tester included"},{"description":"Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack"},{"description":"Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack"},{"description":"80W maximum power (20W RMS); 4\" IMPP composite cone woofer; 3/4\" horn tweeter"},{"description":"Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack"},{"description":"Alkaline batteries; 1.5V"},{"description":"From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket"}]}
+
+

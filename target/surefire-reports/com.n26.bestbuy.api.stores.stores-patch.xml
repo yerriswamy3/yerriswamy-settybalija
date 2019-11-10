@@ -1,0 +1,39 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/stores/stores-patch.feature" skipped="0" tests="3" time="2.114033">
+  <testcase classname="com.n26.bestbuy.api.stores.stores-patch" name="Get the stores in MN state" time="0.550577">
+    <system-out>* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param state = 'MN' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.stores.stores-patch" name="Get the stores that sell apple products" time="0.796795">
+    <system-out>* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param state = 'MN' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param service.name = 'Apple Shop' ................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.stores.stores-patch" name="Get the stores around 90210 pin" time="0.766662">
+    <system-out>* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param state = 'MN' .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param service.name = 'Apple Shop' ................................... passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* url baseURL ............................................................. passed
+* path 'stores' ........................................................... passed
+Given param service.name = 'Windows Store' ................................ passed
+Given param near = 90210 .................................................. passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed</system-out>
+  </testcase>
+</testsuite>

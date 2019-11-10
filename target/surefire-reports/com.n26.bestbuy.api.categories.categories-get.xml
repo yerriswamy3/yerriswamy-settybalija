@@ -1,0 +1,44 @@
+<testsuite failures="0" name="com/n26/bestbuy/api/categories/categories-get.feature" skipped="0" tests="3" time="4.678601">
+  <testcase classname="com.n26.bestbuy.api.categories.categories-get" name="Get the Categories with filters" time="2.29913">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'categories' ................................................... passed
+And param name[$like] = '*Mobile*' ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.categories.categories-get" name="Get the Categories with name" time="2.218994">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'categories' ................................................... passed
+And param name[$like] = '*Mobile*' ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* url baseURL ............................................................. passed
+Given path 'categories' ................................................... passed
+And param $select[] = 'name' .............................................. passed
+When method get ........................................................... passed
+Then status 500 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+  <testcase classname="com.n26.bestbuy.api.categories.categories-get" name="Get the Categories which has mobile" time="0.160477">
+    <system-out>* url baseURL ............................................................. passed
+Given path 'categories' ................................................... passed
+And param name[$like] = '*Mobile*' ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed
+* url baseURL ............................................................. passed
+Given path 'categories' ................................................... passed
+And param $select[] = 'name' .............................................. passed
+When method get ........................................................... passed
+Then status 500 ........................................................... passed
+* print response .......................................................... passed
+* url baseURL ............................................................. passed
+Given path 'categories' ................................................... passed
+And param name[$like] = '*Mobile*' ........................................ passed
+When method get ........................................................... passed
+Then status 200 ........................................................... passed
+* print response .......................................................... passed</system-out>
+  </testcase>
+</testsuite>

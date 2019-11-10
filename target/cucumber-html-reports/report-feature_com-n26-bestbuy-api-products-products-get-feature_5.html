@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports  - Feature: com/n26/bestbuy/api/products/products-get.feature</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Play Ground</td>
+            <td>10 Nov 2019, 03:04</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Feature Report</h2>
+      </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table class="stats-table">
+
+        
+<thead>
+  <tr class="header dont-sort">
+        <th></th>
+    <th colspan="6">Steps</th>
+    <th colspan="3">Scenarios</th>
+    <th colspan="2">Features</th>
+  </tr>
+  <tr>
+    <th>Feature</th>
+        <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="skipped">Skipped</th>
+    <th class="pending">Pending</th>
+    <th class="undefined">Undefined</th>
+    <th class="total">Total</th>
+
+    <th class="passed">Passed</th>
+    <th class="failed">Failed</th>
+    <th class="total">Total</th>
+
+    <th>Duration</th>
+    <th>Status</th>
+  </tr>
+</thead>
+
+
+        <tbody>
+        <tr>
+          <td class="tagname">com/n26/bestbuy/api/products/products-get.feature</td>
+                    <td      class="passed"    >19</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td >0</td>
+          <td class="total">19</td>
+
+          <td  class="passed"    >3</td>
+          <td >0</td>
+          <td class="total">3</td>
+
+          <td class="duration" data-value="12236184600">12s 236ms</td>
+          <td class="passed">Passed</td>
+        </tr>
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="feature">
+        
+<div class="tags indention">
+      <b>Tags:</b>
+           <a href="report-tag_regression.html">@regression</a>
+      </div>
+
+        
+<div class="brief passed">
+  <span class="keyword indention">Feature</span>
+  <span class="name">com/n26/bestbuy/api/products/products-get.feature</span>
+  
+
+  </div>
+
+        <div class="description indention">Verify Health Check Endpoint</div>
+
+        <div class="elements inner-level">
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-1" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-2" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-3">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details">
+        <pre>22:48:57.245 karate.env system property was: null</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">3s 392ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-4">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get the products with only name and description</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'products'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param $select[] = 'name'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">And</span>
+  <span class="name">param $select[] = 'description'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">3s 391ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-6">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details">
+        <pre>22:48:57.252 request:
+1 &gt; GET http://localhost:3030/products?%24select%5B%5D=description
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3030
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:49:00.640 response time in milliseconds: 3345.10
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 08 Nov 2019 17:18:59 GMT
+1 &lt; ETag: W/&quot;498-GpO+gKQiRbESBYyTAWYZBnny7JI&quot;
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; X-Powered-By: Express
+{&quot;total&quot;:51957,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;description&quot;:&quot;Compatible with select electronic devices; AAA size; DURALOCK Power Preserve technology; 4-pack&quot;},{&quot;description&quot;:&quot;Long-lasting energy; DURALOCK Power Preserve technology; for toys, clocks, radios, games, remotes, PDAs and more&quot;},{&quot;description&quot;:&quot;Compatible with select electronic devices; AA size; DURALOCK Power Preserve technology; 8-pack&quot;},{&quot;description&quot;:&quot;4-pack AA alkaline batteries; battery tester included&quot;},{&quot;description&quot;:&quot;Compatible with select electronic devices; C size; DURALOCK Power Preserve technology; 4-pack&quot;},{&quot;description&quot;:&quot;Compatible with select electronic devices; D size; DURALOCK Power Preserve technology; 4-pack&quot;},{&quot;description&quot;:&quot;80W maximum power (20W RMS); 4\&quot; IMPP composite cone woofer; 3/4\&quot; horn tweeter&quot;},{&quot;description&quot;:&quot;Compatible with select electronic devices; alkaline chemistry; 9V size; DURALOCK Power Preserve technology; 2-pack&quot;},{&quot;description&quot;:&quot;Alkaline batteries; 1.5V&quot;},{&quot;description&quot;:&quot;From our expanded online assortment; compatible with most 1989-2000 Ford, Lincoln and Mercury vehicles; snap-in TurboKit offers fast installation; spacer/trim ring; rear support bracket&quot;}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-7">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-7" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-8">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-8" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-9">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-9" class="collapse collapsable-details">
+        <pre>22:48:57.318 karate.env system property was: null</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">4s 437ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-10">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get the products with only name and description</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-10" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-11">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-11" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'products'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param category.name = 'TVs'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param price[$gt] = '500'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param price[$lt] = '800'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param shipping[$eq] = '0'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">4s 435ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-12">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-12" class="collapse collapsable-details">
+        <pre>22:48:57.326 request:
+1 &gt; GET http://localhost:3030/products?category.name=TVs&amp;price%5B%24gt%5D=500&amp;price%5B%24lt%5D=800&amp;shipping%5B%24eq%5D=0
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3030
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:49:01.757 response time in milliseconds: 4428.18
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 08 Nov 2019 17:19:01 GMT
+1 &lt; ETag: W/&quot;26ba-UOMZTn8L8Lk9aDbN1qp7bvK0uFQ&quot;
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; X-Powered-By: Express
+{&quot;total&quot;:29,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:2698105,&quot;name&quot;:&quot;Sony - 43\&quot; Class (42.5\&quot; Diag.) - LED - 2160p - Smart - 4K Ultra HD TV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:699.99,&quot;upc&quot;:&quot;027242888067&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;2160p resolutionMotionflow XR 960Smart Android TV with Google Play and Google Cast built-in&quot;,&quot;manufacturer&quot;:&quot;Sony&quot;,&quot;model&quot;:&quot;XBR43X830C&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/sony-43-class-42-5-diag--led-2160p-smart-4k-ultra-hd-tv-black/2698105.p?id=1219555371949&amp;skuId=2698105&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/2698/2698105_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:01:44.806Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:01:44.806Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat333800050003&quot;,&quot;name&quot;:&quot;4K Ultra HD TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:3892026,&quot;name&quot;:&quot;LG - 50\&quot; Class (49.5\&quot; Diag.) - LED - 1080p - Smart - HDTV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:549.99,&quot;upc&quot;:&quot;719192597044&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;1080p resolutionTruMotion 120Smart TV, LG Content Store, Web browser included&quot;,&quot;manufacturer&quot;:&quot;LG&quot;,&quot;model&quot;:&quot;50LF6100&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/lg-50-class-49-5-diag--led-1080p-smart-hdtv-black/3892026.p?id=1219606085772&amp;skuId=3892026&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3892/3892026_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:00:01.751Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:00:01.751Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101001&quot;,&quot;name&quot;:&quot;All Flat-Panel TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:3953157,&quot;name&quot;:&quot;Samsung - 40\&quot; Class (40\&quot; Diag.) - LED - 2160p - Smart - 4K Ultra HD TV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:749.99,&quot;upc&quot;:&quot;887276075716&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;2160p 4K Ultra HD resolutionClear Motion Rate 120Smart TV, S-Recommendation, Web browser&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;UN40JU6500FXZA&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/samsung-40-class-40-diag--led-2160p-smart-4k-ultra-hd-tv-black/3953157.p?id=1219609307257&amp;skuId=3953157&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3953/3953157_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:00:31.886Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:00:31.886Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat333800050003&quot;,&quot;name&quot;:&quot;4K Ultra HD TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:4405201,&quot;name&quot;:&quot;Samsung - 50\&quot; Class (49.5\&quot; Diag.) - LED - 1080p - Smart - HDTV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:699.99,&quot;upc&quot;:&quot;887276069210&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;1080p resolutionMotion Rate 60Smart TV, Web browser included&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;UN50J5200AFXZA&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/samsung-50-class-49-5-diag--led-1080p-smart-hdtv-black/4405201.p?id=1219743457219&amp;skuId=4405201&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4405/4405201_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:01:06.648Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:01:06.648Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101001&quot;,&quot;name&quot;:&quot;All Flat-Panel TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:4513700,&quot;name&quot;:&quot;Samsung - 48\&quot; Class (47.6\&quot; Diag.) - LED - 1080p - Smart - HDTV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:599.99,&quot;upc&quot;:&quot;887276124797&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;1080p resolutionMotion Rate 60Smart TV, Samsung Smart Hub, Web browser included&quot;,&quot;manufacturer&quot;:&quot;Samsung&quot;,&quot;model&quot;:&quot;UN48J5201AFXZA&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/samsung-48-class-47-6-diag--led-1080p-smart-hdtv-black/4513700.p?id=1219756369972&amp;skuId=4513700&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4513/4513700_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101001&quot;,&quot;name&quot;:&quot;All Flat-Panel TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:4517000,&quot;name&quot;:&quot;LG - 49\&quot; Class (48.5\&quot; Diag.) - LED - 2160p - Smart - 4K Ultra HDTV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:599.99,&quot;upc&quot;:&quot;719192602632&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;2160p resolutionTruMotion 120Smart TV&quot;,&quot;manufacturer&quot;:&quot;LG&quot;,&quot;model&quot;:&quot;49UF6430&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/lg-49-class-48-5-diag--led-2160p-smart-4k-ultra-hdtv-black/4517000.p?id=1219755712396&amp;skuId=4517000&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4517/4517000_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat333800050003&quot;,&quot;name&quot;:&quot;4K Ultra HD TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:4801501,&quot;name&quot;:&quot;Sony - 48\&quot; Class (47.6\&quot; Diag.) - LED - 1080p - Smart - HDTV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:549.99,&quot;upc&quot;:&quot;027242896482&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;1080p resolutionMotionflow XR 240Smart TV, Opera browser,&quot;,&quot;manufacturer&quot;:&quot;Sony&quot;,&quot;model&quot;:&quot;KDL48W650D&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/sony-48-class-47-6-diag--led-1080p-smart-hdtv-black/4801501.p?id=1219824662196&amp;skuId=4801501&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4801/4801501_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101001&quot;,&quot;name&quot;:&quot;All Flat-Panel TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]},{&quot;id&quot;:4801700,&quot;name&quot;:&quot;Sony - 43\&quot; Class (42.5\&quot; Diag.) - LED - 2160p - Smart - 4K Ultra HD TV with High Dynamic Range - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:749.99,&quot;upc&quot;:&quot;027242896529&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;2160p resolution with HDRMotionflow XR 240Smart TV, Android TV&quot;,&quot;manufacturer&quot;:&quot;Sony&quot;,&quot;model&quot;:&quot;XBR43X800D&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/sony-43-class-42-5-diag--led-2160p-smart-4k-ultra-hd-tv-with-high-dynamic-range-black/4801700.p?id=1219824659346&amp;skuId=4801700&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4801/4801700_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat333800050003&quot;,&quot;name&quot;:&quot;4K Ultra HD TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:4801704,&quot;name&quot;:&quot;Sony - 49\&quot; Class (48.5\&quot; Diag.) - LED - 2160p - Smart - 4K Ultra HD TV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:799.99,&quot;upc&quot;:&quot;027242896581&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;2160p resolutionMotionflow XR 240Smart TV, Android TV&quot;,&quot;manufacturer&quot;:&quot;Sony&quot;,&quot;model&quot;:&quot;XBR49X700D&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/sony-49-class-48-5-diag--led-2160p-smart-4k-ultra-hd-tv-black/4801704.p?id=1219824659349&amp;skuId=4801704&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4801/4801704_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat333800050003&quot;,&quot;name&quot;:&quot;4K Ultra HD TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.643Z&quot;}]},{&quot;id&quot;:4807300,&quot;name&quot;:&quot;Toshiba - 55\&quot; Class (54.6\&quot; Diag.) - LED - 1080p - Smart - HDTV - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:549.99,&quot;upc&quot;:&quot;600603198250&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Only at Best Buy1080p resolution60Hz refresh rateSmart TV&quot;,&quot;manufacturer&quot;:&quot;Toshiba&quot;,&quot;model&quot;:&quot;55L421U&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/toshiba-55-class-54-6-diag--led-1080p-smart-hdtv-black/4807300.p?id=bb4807300&amp;skuId=4807300&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4807/4807300_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101000&quot;,&quot;name&quot;:&quot;TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0101001&quot;,&quot;name&quot;:&quot;All Flat-Panel TVs&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">000ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-13">
+    
+<div class="brief passed">
+  <span class="keyword indention">Background</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-13" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-14">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-14" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">*</span>
+  <span class="name">url baseURL</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-15">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-15" class="collapse collapsable-details">
+        <pre>22:48:57.352 karate.env system property was: null</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                      
+<div class="element">
+  
+  
+<div class="tags indention">
+  </div>
+
+  
+  <span class="lead-duration duration">4s 406ms</span>
+
+
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-16">
+    
+<div class="brief passed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Get the healthcheck</span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-16" class="collapse collapsable-details ">
+    
+
+
+    
+<div class="steps inner-level">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-17">
+    
+<div class="brief passed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+  
+
+       <i class="chevron fa fa-fw"></i>
+  </div>
+
+  </div>
+
+  <div id="steps-17" class="inner-level collapse collapsable-details ">
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">path 'products'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">param $sort[price] = '-1'</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">When</span>
+  <span class="name">method get</span>
+  
+  <span class="lead-duration duration">4s 405ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+  <div class="inner-level">
+    <div class="docstring indention">
+            <div data-toggle="collapse" class="collapsable-control" data-target="#msg-18">
+          <a>Doc string</a>
+      </div>
+      <div id="msg-18" class="collapse collapsable-details">
+        <pre>22:48:57.360 request:
+1 &gt; GET http://localhost:3030/products?%24sort%5Bprice%5D=-1
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Host: localhost:3030
+1 &gt; User-Agent: Apache-HttpClient/4.5.5 (Java/1.8.0_221)
+
+22:49:01.760 response time in milliseconds: 4395.50
+1 &lt; 200
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Allow: GET,POST,PUT,PATCH,DELETE
+1 &lt; Connection: keep-alive
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Date: Fri, 08 Nov 2019 17:19:01 GMT
+1 &lt; ETag: W/&quot;3293-P9azs8YOnTtIwIdcIW+1YJyStx8&quot;
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Vary: Accept, Accept-Encoding
+1 &lt; X-Powered-By: Express
+{&quot;total&quot;:51957,&quot;limit&quot;:10,&quot;skip&quot;:0,&quot;data&quot;:[{&quot;id&quot;:3041141,&quot;name&quot;:&quot;Sony - ES SXRD 3D-Ready 4K Home Theater Projector - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:27999.98,&quot;upc&quot;:&quot;027242873193&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4K (4096 x 2160) resolution2000 lumens brightness16:9 aspect ratio&quot;,&quot;manufacturer&quot;:&quot;Sony&quot;,&quot;model&quot;:&quot;VPLVW1100ES&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/sony-es-sxrd-3d-ready-4k-home-theater-projector-black/3041141.p?id=1219086346401&amp;skuId=3041141&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/3041/3041141_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:02:21.601Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat158900050008&quot;,&quot;name&quot;:&quot;Projectors &amp; Screens&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;},{&quot;id&quot;:&quot;pcmcat158900050018&quot;,&quot;name&quot;:&quot;Projectors&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;}]},{&quot;id&quot;:1790046,&quot;name&quot;:&quot;Nikon - AF-S NIKKOR 800mm f/5.6E FL ED VR Super-Telephoto Lens for Select Nikon Cameras - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:16299.99,&quot;upc&quot;:&quot;018208022052&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with select Nikon cameras; VR (Vibration Reduction) image stabilization; ED (Extra-Low Dispersion) glass; SWM (Silent Wave Motor); 1.25x teleconverter&quot;,&quot;manufacturer&quot;:&quot;Nikon&quot;,&quot;model&quot;:&quot;2205&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/nikon-af-s-nikkor-800mm-f-5-6e-fl-ed-vr-super-telephoto-lens-for-select-nikon-cameras-black/1790046.p?id=1219064724072&amp;skuId=1790046&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1790/1790046_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:00:01.751Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:00:01.751Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0400000&quot;,&quot;name&quot;:&quot;Cameras &amp; Camcorders&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410000&quot;,&quot;name&quot;:&quot;Digital Camera Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410018&quot;,&quot;name&quot;:&quot;Camera Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat195200050001&quot;,&quot;name&quot;:&quot;Prime Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat233000050008&quot;,&quot;name&quot;:&quot;DSLR Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]},{&quot;id&quot;:4621000,&quot;name&quot;:&quot;Sony - ES 4K SXRD Projector - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:14999.98,&quot;upc&quot;:&quot;027242892095&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;4K Ultra HD resolution16:9 aspect ratio&quot;,&quot;manufacturer&quot;:&quot;Sony&quot;,&quot;model&quot;:&quot;VPLVW665ES&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/sony-es-4k-sxrd-projector-black/4621000.p?id=1219780138505&amp;skuId=4621000&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4621/4621000_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:01:33.383Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:01:33.383Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat158900050008&quot;,&quot;name&quot;:&quot;Projectors &amp; Screens&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;},{&quot;id&quot;:&quot;pcmcat158900050018&quot;,&quot;name&quot;:&quot;Projectors&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.899Z&quot;}]},{&quot;id&quot;:8794897,&quot;name&quot;:&quot;Canon - EF 800mm f/5.6L IS USM Super-Telephoto Lens for Canon EOS Cameras - White&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:12999.99,&quot;upc&quot;:&quot;013803092738&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with Canon EOS cameras; image stabilization; USM (Ultrasonic Motor); 800mm focal length; 0.14x maximum magnification; f/32 minimum and f/5.6 maximum aperture&quot;,&quot;manufacturer&quot;:&quot;Canon&quot;,&quot;model&quot;:&quot;2746B002&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/canon-ef-800mm-f-5-6l-is-usm-super-telephoto-lens-for-canon-eos-cameras-white/8794897.p?id=1205537954826&amp;skuId=8794897&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/8794/8794897_rc.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:00:31.886Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:00:31.886Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0400000&quot;,&quot;name&quot;:&quot;Cameras &amp; Camcorders&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410000&quot;,&quot;name&quot;:&quot;Digital Camera Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410018&quot;,&quot;name&quot;:&quot;Camera Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat195200050001&quot;,&quot;name&quot;:&quot;Prime Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat233000050008&quot;,&quot;name&quot;:&quot;DSLR Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]},{&quot;id&quot;:4262200,&quot;name&quot;:&quot;Nikon - Nikkor AF-S 600mm f/4.0 E FL ED VR Optical Telephoto Lens for Nikon F - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:12299.99,&quot;upc&quot;:&quot;018208200542&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with 35mm SLRs and digital SLRs; optical image stabilization; tele; internal focusing system, full-time manual focusing, ED glass; 40.5mm filter size; 14.4' minimum focus distance; up to 0.14x magnification&quot;,&quot;manufacturer&quot;:&quot;Nikon&quot;,&quot;model&quot;:&quot;20054&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/nikon-nikkor-af-s-600mm-f-4-0-e-fl-ed-vr-optical-telephoto-lens-for-nikon-f-black/4262200.p?id=1219732458980&amp;skuId=4262200&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4262/4262200_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:01:06.648Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:01:06.648Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0400000&quot;,&quot;name&quot;:&quot;Cameras &amp; Camcorders&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410000&quot;,&quot;name&quot;:&quot;Digital Camera Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410018&quot;,&quot;name&quot;:&quot;Camera Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat196500050012&quot;,&quot;name&quot;:&quot;Long-Range Zoom Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat233000050008&quot;,&quot;name&quot;:&quot;DSLR Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]},{&quot;id&quot;:8437043,&quot;name&quot;:&quot;Key Digital - Champion Series 16 x 16 HDMI Matrix Switcher - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:11999.98,&quot;upc&quot;:&quot;819505001708&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;KEY DIGITAL Champion Series 16 x 16 HDMI Matrix Switcher: Compatible with most HDMI sources; 1080p maximum resolution; supports Dolby TrueHD, Dolby Digital Plus and DTS-HD Master Audio; 3D-ready&quot;,&quot;manufacturer&quot;:&quot;Key Digital&quot;,&quot;model&quot;:&quot;KD-16X16CS&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/key-digital-champion-series-16-x-16-hdmi-matrix-switcher-black/8437043.p?id=1219691713155&amp;skuId=8437043&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/8437/8437043_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:01:44.806Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:01:44.806Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0100000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0107000&quot;,&quot;name&quot;:&quot;TV &amp; Home Theater Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0107015&quot;,&quot;name&quot;:&quot;A/V Cables &amp; Connectors&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat175600050016&quot;,&quot;name&quot;:&quot;A/V Switchers&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]},{&quot;id&quot;:1688841,&quot;name&quot;:&quot;Canon - EF 600mm f/4L IS II USM Super Telephoto Lens for Most Canon EOS SLR Cameras - White&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:11499.99,&quot;upc&quot;:&quot;013803134148&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with most Canon EOS SLR cameras; 3 image stabilization modes; inner focusing system; 52mm filter size; 14.8' minimum focus distance&quot;,&quot;manufacturer&quot;:&quot;Canon&quot;,&quot;model&quot;:&quot;5125B002&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/canon-ef-600mm-f-4l-is-ii-usm-super-telephoto-lens-for-most-canon-eos-slr-cameras-white/1688841.p?id=1219060409045&amp;skuId=1688841&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1688/1688841_rc.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:03.298Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0400000&quot;,&quot;name&quot;:&quot;Cameras &amp; Camcorders&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410000&quot;,&quot;name&quot;:&quot;Digital Camera Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410018&quot;,&quot;name&quot;:&quot;Camera Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat195200050001&quot;,&quot;name&quot;:&quot;Prime Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat233000050008&quot;,&quot;name&quot;:&quot;DSLR Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]},{&quot;id&quot;:9324006,&quot;name&quot;:&quot;Nikon - AF-S NIKKOR 400mm f/2.8E FL ED VR Lens for Select Nikon DSLR Cameras&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:11199.99,&quot;upc&quot;:&quot;018208022175&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with most Nikon DSLR cameras with an F-Bayonet mount; lightweight design; image stabilization; ED glass; fluorite lens element; IF lens; nano crystal coat; silent wave motor&quot;,&quot;manufacturer&quot;:&quot;Nikon&quot;,&quot;model&quot;:&quot;2217&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/nikon-af-s-nikkor-400mm-f-2-8e-fl-ed-vr-lens-for-select-nikon-dslr-cameras/9324006.p?id=1219405808498&amp;skuId=9324006&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/9324/9324006_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:58:46.655Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:58:46.655Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0400000&quot;,&quot;name&quot;:&quot;Cameras &amp; Camcorders&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410000&quot;,&quot;name&quot;:&quot;Digital Camera Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410018&quot;,&quot;name&quot;:&quot;Camera Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat195200050001&quot;,&quot;name&quot;:&quot;Prime Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat233000050008&quot;,&quot;name&quot;:&quot;DSLR Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]},{&quot;id&quot;:1757296,&quot;name&quot;:&quot;Canon - EF 200-400mm f/4L IS USM Super Telephoto Lens for Most Canon EOS SLR Cameras - White&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:10999.99,&quot;upc&quot;:&quot;013803134179&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with most Canon EOS SLR cameras; built-in 1.4x extender; 3 image stabilization modes; 52mm filter size; 6.6' minimum focus distance&quot;,&quot;manufacturer&quot;:&quot;Canon&quot;,&quot;model&quot;:&quot;5176B002&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/canon-ef-200-400mm-f-4l-is-usm-super-telephoto-lens-for-most-canon-eos-slr-cameras-white/1757296.p?id=1219062656772&amp;skuId=1757296&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/1757/1757296_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:59:24.820Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:59:24.820Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0400000&quot;,&quot;name&quot;:&quot;Cameras &amp; Camcorders&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410000&quot;,&quot;name&quot;:&quot;Digital Camera Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410018&quot;,&quot;name&quot;:&quot;Camera Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat196500050012&quot;,&quot;name&quot;:&quot;Long-Range Zoom Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat233000050008&quot;,&quot;name&quot;:&quot;DSLR Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]},{&quot;id&quot;:4262000,&quot;name&quot;:&quot;Nikon - AF-S NIKKOR 500mm f/4E FL ED VR Super Telephoto Lens - Black&quot;,&quot;type&quot;:&quot;HardGood&quot;,&quot;price&quot;:10299.99,&quot;upc&quot;:&quot;018208200535&quot;,&quot;shipping&quot;:0,&quot;description&quot;:&quot;Compatible with Nikon cameras with an F-mount; 4-stop VR image stabilization; Nano Crystal Coat; 40.5mm filter size; 11.9' minimum focus distance&quot;,&quot;manufacturer&quot;:&quot;Nikon&quot;,&quot;model&quot;:&quot;20053&quot;,&quot;url&quot;:&quot;http://www.bestbuy.com/site/nikon-af-s-nikkor-500mm-f-4e-fl-ed-vr-super-telephoto-lens-black/4262000.p?id=1219732457043&amp;skuId=4262000&amp;cmp=RMXCC&quot;,&quot;image&quot;:&quot;http://img.bbystatic.com/BestBuy_US/images/products/4262/4262000_sa.jpg&quot;,&quot;createdAt&quot;:&quot;2016-11-17T18:01:06.648Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T18:01:06.648Z&quot;,&quot;categories&quot;:[{&quot;id&quot;:&quot;abcat0400000&quot;,&quot;name&quot;:&quot;Cameras &amp; Camcorders&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410000&quot;,&quot;name&quot;:&quot;Digital Camera Accessories&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;abcat0410018&quot;,&quot;name&quot;:&quot;Camera Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:04.285Z&quot;},{&quot;id&quot;:&quot;pcmcat195200050001&quot;,&quot;name&quot;:&quot;Prime Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;},{&quot;id&quot;:&quot;pcmcat233000050008&quot;,&quot;name&quot;:&quot;DSLR Lenses&quot;,&quot;createdAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;,&quot;updatedAt&quot;:&quot;2016-11-17T17:57:05.399Z&quot;}]}]}</pre>
+      </div>
+    </div>
+  </div>
+
+        
+
+        
+  
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">status 200</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+  
+      </div>
+      </div>
+</div>
+
+
+    
+
+  </div>
+</div>
+
+                  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-10">
+      <i class="fa fa-chevron-circle-down fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('show')"></i>
+      <i class="fa fa-chevron-circle-up fa-2x collapsable-control"
+        onClick="javascript:$('#report .collapsable-details').collapse('hide')"></i>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
